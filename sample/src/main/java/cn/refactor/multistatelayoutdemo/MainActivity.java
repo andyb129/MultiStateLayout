@@ -95,6 +95,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         break;
                 }
                 Log.d(TAG, String.valueOf(mStateLayout.getState()));
+                //check state matches specified value
+                if (mStateLayout.isState(MultiStateLayout.State.ERROR)) {
+                    Toast.makeText(MainActivity.this, "State is now ERROR", Toast.LENGTH_SHORT).show();
+                }
                 return true;
             }
         });

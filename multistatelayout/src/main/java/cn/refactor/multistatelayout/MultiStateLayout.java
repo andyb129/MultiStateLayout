@@ -219,6 +219,15 @@ public class MultiStateLayout extends FrameLayout {
     }
 
     /**
+     * check if the current state equals state passed in
+     * @param state
+     * @return
+     */
+    public boolean isState(int state) {
+        return getState() == state;
+    }
+
+    /**
      * @return current state is customise state
      */
     @SuppressWarnings("unused")
